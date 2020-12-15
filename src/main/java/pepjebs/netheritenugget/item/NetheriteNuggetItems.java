@@ -9,7 +9,7 @@ import pepjebs.netheritenugget.NetheriteNuggetMod;
 
 public class NetheriteNuggetItems {
 
-    public static final Item NETHERITE_NUGGET = new Item(new FabricItemSettings().group(ItemGroup.MISC));
+    public static final NetheriteNuggetItem NETHERITE_NUGGET = new NetheriteNuggetItem(new FabricItemSettings().group(ItemGroup.MISC));
 
     public static void onLoad() {
         Registry.register(Registry.ITEM, new Identifier(NetheriteNuggetMod.MODID, "netherite_nugget"), NETHERITE_NUGGET);
