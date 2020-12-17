@@ -1,7 +1,7 @@
 {
   "schemaVersion": 1,
   "id": "netherite_nugget",
-  "version": "1.0.1",
+  "version": "1.0.2",
 
   "name": "Netherite Nugget",
   "description": "For making Netherite Tool/Armor repair cheaper.",
