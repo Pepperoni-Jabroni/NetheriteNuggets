@@ -15,12 +15,12 @@ import org.spongepowered.asm.mixin.injection.callback.CallbackInfoReturnable;
 import pepjebs.netheritenugget.item.NetheriteNuggetItems;
 
 @Mixin(ToolMaterials.class)
-public class AnvilNetheriteNuggetMixin {
+public class NetheriteNuggetToolMixin {
     @Shadow
     @Final
     private final Lazy<Ingredient> repairIngredient;
 
-    public AnvilNetheriteNuggetMixin() {
+    public NetheriteNuggetToolMixin() {
         this.repairIngredient = null;
     }
 
