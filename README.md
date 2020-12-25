@@ -2,6 +2,8 @@
 
   <a href="https://www.curseforge.com/minecraft/mc-mods/fabric-api"><img src="https://i.imgur.com/Ol1Tcf8.png" width="149" height="50" title="Fabric API" alt="Fabric API"></a>
 
+[Looking for the Forge version?](https://github.com/Pepperoni-Jabroni/NetheriteNuggetsForge)
+
 [![](http://cf.way2muchnoise.eu/428453.svg)](https://www.curseforge.com/minecraft/mc-mods/netherite-nuggets)
 
 A Minecraft mod which adds Netherite Nuggets for repairing Netherite gear.
