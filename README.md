@@ -16,4 +16,6 @@ As you've guessed, crafting recipes are:
 
 Yes... Go ahead and throw them into the fire... They won't burn.
 
+**New feature:** Tired of those Piglin Brutes being tough to kill and unrewarding to loot? This mod also gives Piglin Brutes a 50% chance to drop a single Netherite Nugget on death. The chance is changeable with a Config in your /config/ folder, from 0% to 100%. Feature is not available on 1.16.1 (for obvious reasons).
+
 ![The mod in use](https://i.imgur.com/sAKGn2s.png)
