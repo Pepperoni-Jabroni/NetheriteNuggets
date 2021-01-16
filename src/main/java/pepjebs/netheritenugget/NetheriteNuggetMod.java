@@ -28,7 +28,7 @@ public class NetheriteNuggetMod implements ModInitializer {
 
         NetheriteNuggetConfig conf = AutoConfig.getConfigHolder(NetheriteNuggetConfig.class).getConfig();
         if (conf.piglinBruteNetheriteNuggetDropChance > 1.0F) conf.piglinBruteNetheriteNuggetDropChance = 1.0F;
-        LOGGER.info("piglinBruteNetheriteNuggetDropChance: " + 100*conf.piglinBruteNetheriteNuggetDropChance + "%");
+        if (conf.piglinBruteNetheriteNuggetDropChance < 0.0F) conf.piglinBruteNetheriteNuggetDropChance = 0.0F;
         if (conf.piglinBruteNetheriteNuggetDropChance > 0) {
             LootTableLoadingCallback.EVENT.register((resourceManager, lootManager, id, supplier, setter) -> {
                 if (id.equals(EntityType.PIGLIN_BRUTE.getLootTableId())) {

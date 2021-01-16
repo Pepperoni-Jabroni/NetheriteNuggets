@@ -6,7 +6,6 @@ import net.minecraft.item.Items;
 import net.minecraft.item.ToolMaterials;
 import net.minecraft.recipe.Ingredient;
 import net.minecraft.util.Lazy;
-import org.spongepowered.asm.mixin.Final;
 import org.spongepowered.asm.mixin.Mixin;
 import org.spongepowered.asm.mixin.Shadow;
 import org.spongepowered.asm.mixin.injection.At;
@@ -17,8 +16,7 @@ import pepjebs.netheritenugget.item.NetheriteNuggetItems;
 @Mixin(ToolMaterials.class)
 public class NetheriteNuggetToolMixin {
     @Shadow
-    @Final
-    private final Lazy<Ingredient> repairIngredient;
+    private Lazy<Ingredient> repairIngredient;
 
     public NetheriteNuggetToolMixin() {
         this.repairIngredient = null;

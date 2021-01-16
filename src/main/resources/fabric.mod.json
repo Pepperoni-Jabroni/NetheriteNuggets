@@ -1,7 +1,7 @@
 {
   "schemaVersion": 1,
   "id": "netherite_nugget",
-  "version": "1.2.0",
+  "version": "1.2.1",
 
   "name": "Netherite Nugget",
   "description": "For making Netherite Tool/Armor repair cheaper.",
@@ -9,8 +9,8 @@
     "pepperoni_jabroni_"
   ],
   "contact": {
-    "homepage": "https://facebook.com/",
-    "sources": "https://facebook.com/"
+    "homepage": "https://www.curseforge.com/minecraft/mc-mods/netherite-nuggets-fabric",
+    "sources": "https://github.com/Pepperoni-Jabroni/NetheriteNuggetsFabric"
   },
 
   "license": "GPL-3.0",
