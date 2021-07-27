@@ -7,7 +7,8 @@ import net.fabricmc.fabric.api.loot.v1.FabricLootPoolBuilder;
 import net.fabricmc.fabric.api.loot.v1.event.LootTableLoadingCallback;
 import net.minecraft.entity.Entity;
 import net.minecraft.entity.EntityType;
-import net.minecraft.loot.provider.number.ConstantLootNumberProvider;
+import net.minecraft.loot.BinomialLootTableRange;
+import net.minecraft.loot.ConstantLootTableRange;
 import net.minecraft.loot.condition.LootConditionTypes;
 import net.minecraft.loot.entry.ItemEntry;
 import org.apache.logging.log4j.LogManager;
@@ -32,7 +33,7 @@ public class NetheriteNuggetMod implements ModInitializer {
             LootTableLoadingCallback.EVENT.register((resourceManager, lootManager, id, supplier, setter) -> {
                 if (id.equals(EntityType.PIGLIN_BRUTE.getLootTableId())) {
                     FabricLootPoolBuilder poolBuilder = FabricLootPoolBuilder.builder()
-                            .rolls(ConstantLootNumberProvider.create(conf.piglinBruteNetheriteNuggetDropChance))
+                            .rolls(BinomialLootTableRange.create(1, conf.piglinBruteNetheriteNuggetDropChance))
                             .withEntry(ItemEntry.builder(NetheriteNuggetItems.NETHERITE_NUGGET).build());
 
                     supplier.withPool(poolBuilder.build());
