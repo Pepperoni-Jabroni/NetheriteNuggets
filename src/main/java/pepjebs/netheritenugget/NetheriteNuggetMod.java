@@ -1,16 +1,13 @@
 package pepjebs.netheritenugget;
 
-import me.sargunvohra.mcmods.autoconfig1u.AutoConfig;
-import me.sargunvohra.mcmods.autoconfig1u.serializer.JanksonConfigSerializer;
+import me.shedaniel.autoconfig.AutoConfig;
+import me.shedaniel.autoconfig.serializer.JanksonConfigSerializer;
 import net.fabricmc.api.ModInitializer;
 import net.fabricmc.fabric.api.loot.v1.FabricLootPoolBuilder;
 import net.fabricmc.fabric.api.loot.v1.event.LootTableLoadingCallback;
-import net.minecraft.entity.Entity;
 import net.minecraft.entity.EntityType;
-import net.minecraft.loot.BinomialLootTableRange;
-import net.minecraft.loot.ConstantLootTableRange;
-import net.minecraft.loot.condition.LootConditionTypes;
 import net.minecraft.loot.entry.ItemEntry;
+import net.minecraft.loot.provider.number.BinomialLootNumberProvider;
 import org.apache.logging.log4j.LogManager;
 import org.apache.logging.log4j.Logger;
 import pepjebs.netheritenugget.config.NetheriteNuggetConfig;
@@ -33,7 +30,7 @@ public class NetheriteNuggetMod implements ModInitializer {
             LootTableLoadingCallback.EVENT.register((resourceManager, lootManager, id, supplier, setter) -> {
                 if (id.equals(EntityType.PIGLIN_BRUTE.getLootTableId())) {
                     FabricLootPoolBuilder poolBuilder = FabricLootPoolBuilder.builder()
-                            .rolls(BinomialLootTableRange.create(1, conf.piglinBruteNetheriteNuggetDropChance))
+                            .rolls(BinomialLootNumberProvider.create(1, conf.piglinBruteNetheriteNuggetDropChance))
                             .withEntry(ItemEntry.builder(NetheriteNuggetItems.NETHERITE_NUGGET).build());
 
                     supplier.withPool(poolBuilder.build());

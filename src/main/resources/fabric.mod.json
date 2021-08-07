@@ -1,33 +1,34 @@
 {
   "schemaVersion": 1,
   "id": "netherite_nugget",
-  "version": "1.2.1",
+  "version": "1.3.0",
 
-  "name": "Netherite Nugget",
+  "name": "Netherite Nuggets",
   "description": "For making Netherite Tool/Armor repair cheaper.",
   "authors": [
-    "pepperoni_jabroni_"
+    "Pepperoni__Jabroni__"
   ],
   "contact": {
     "homepage": "https://www.curseforge.com/minecraft/mc-mods/netherite-nuggets-fabric",
-    "sources": "https://github.com/Pepperoni-Jabroni/NetheriteNuggetsFabric"
+    "sources": "https://github.com/Pepperoni-Jabroni/NetheriteNuggetsFabric",
+    "issues": "https://github.com/Pepperoni-Jabroni/NetheriteNuggetsFabric/issues"
   },
 
   "license": "GPL-3.0",
 
   "environment": "*",
   "entrypoints": {
-    "main": [
-      "pepjebs.netheritenugget.NetheriteNuggetMod"
-    ]
+    "main": ["pepjebs.netheritenugget.NetheriteNuggetMod"],
+    "modmenu": ["pepjebs.netheritenugget.config.NetheriteNuggetModMenuApiImpl"]
   },
   "mixins": [
     "netheritenugget.mixins.json"
   ],
 
   "depends": {
-    "fabricloader": ">=0.7.4",
+    "fabricloader": ">=0.11.3",
     "fabric": "*",
-    "minecraft": "1.16.x"
+    "minecraft": "1.17.x",
+    "java": ">=16"
   }
 }
