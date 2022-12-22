@@ -5,7 +5,7 @@
   </br></br>
   <a href="https://www.curseforge.com/minecraft/mc-mods/fabric-api"><img src="https://i.imgur.com/Ol1Tcf8.png" width="149" height="50" title="Fabric API" alt="Fabric API"></a>
   </br></br>
-  <a href="https://www.curseforge.com/minecraft/mc-mods/netherite-nuggets-fabric"><img alt="Curseforge" src="https://cf.way2muchnoise.eu/full_428453_downloads.svg"></a> <a href="https://modrinth.com/mod/map-atlases"><img alt="Modrinth" src="https://img.shields.io/modrinth/dt/netherite-nuggets?label=Modrinth%20Downloads"></a> <a href="https://github.com/Pepperoni-Jabroni/NetheriteNuggetsFabric"><img alt="GitHub" src="https://img.shields.io/github/downloads/Pepperoni-Jabroni/NetheriteNuggetsFabric/total?label=Downloads&logo=github"></a>
+  <a href="https://www.curseforge.com/minecraft/mc-mods/netherite-nuggets-fabric"><img alt="Curseforge" src="https://cf.way2muchnoise.eu/full_428453_downloads.svg"></a> <a href="https://modrinth.com/mod/netherite-nuggets"><img alt="Modrinth" src="https://img.shields.io/modrinth/dt/netherite-nuggets?label=Modrinth%20Downloads"></a> <a href="https://github.com/Pepperoni-Jabroni/NetheriteNuggetsFabric"><img alt="GitHub" src="https://img.shields.io/github/downloads/Pepperoni-Jabroni/NetheriteNuggetsFabric/total?label=Downloads&logo=github"></a>
     </br></br>
 <a href="https://github.com/Pepperoni-Jabroni/NetheriteNuggetsForge">Looking for the Forge version?</a>
 </p>
